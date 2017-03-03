@@ -6,8 +6,9 @@
 
 <script>
     export default{
-         data:function(){
-            return{
+        name: 'cmp1',
+        data () {
+            return {
             }
         }
     }

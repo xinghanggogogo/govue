@@ -1,9 +1,7 @@
 <template>
 	<div class="test">
 	<p>父组件向子组件传值</p>
-	<cmp3 v-bind:value1="item"></cmp3>
-	<cmp3 value2="2222222"></cmp3>
-	<p><router-link to="/page1">page1</router-link></p>
+	<cmp3 v-bind:value1="item" value2="222222"></cmp3>
 	</div>
 </template>
 
