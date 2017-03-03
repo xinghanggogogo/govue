@@ -1,6 +1,6 @@
 <template>
     <div class="footer" >
-        <p>这是footer组件</p>
+        <p>这是cmp1组件</p>
     </div>
 </template>
 

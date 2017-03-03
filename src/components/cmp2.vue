@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <p>这是header组件</p>
+        <p>这是cmp2组件</p>
     </div>
 </template>
 
