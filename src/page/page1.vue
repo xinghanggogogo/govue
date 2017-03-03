@@ -1,6 +1,6 @@
 <template>
 	<div class="page1">
-		<p>page1</p>
+		<p>路由和组件</p>
 		<p>这是来自page1的: <cmp1></cmp1></p>
 		<p>这是来自page1的: <cmp2></cmp2></p>
 	</div>

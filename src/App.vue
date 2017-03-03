@@ -1,28 +1,21 @@
 <template>
 	<div id="gogogo">
 		<ul>
-			<li><router-link to="/page1">page1</router-link></li>
-			<li><router-link to="/page2">page2</router-link></li>
+			<li><router-link to="/page1">路由.</router-link></li>
+			<li><router-link to="/page2">父组件向子组件传值.</router-link></li>
+			<li><router-link to="/page3">父组件调用子组件方法.</router-link></li>
+			<li><router-link to="/page4">子组件向父组件通信.</router-link></li>
    		</ul>
-			<router-view></router-view>
-		<p>这是来自的主页的:</p>
-		<cmp1></cmp1>
-		<cmp2></cmp2>
+		<router-view></router-view>
 	</div>
 </template>
 
 <script>
-import cmp1 from './components/cmp1.vue';
-import cmp2 from './components/cmp2.vue';
 export default {
 	name: 'app',
 	data () {
 		return {
 		}
-	},
-	components: {
-		cmp1: cmp1,
-		cmp2: cmp2
 	}
 }
 </script>
