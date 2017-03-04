@@ -22,20 +22,26 @@ export default {
     },
 	methods: {
         func () {
-            this.$http.get('/api/test', {params: {key1: 'value1', key2:' value2'}}).then(function (data) {
-                this.$data.something = data.something
-            })
+            this.$http.get('/api/test', {params: {key1: 'value1', key2:' value2'}}).then((response) => {
+                this.somedata = response.body
+			}, (response) => {
+				//error callback
+			})
         },
-        func0 () {
-            this.$http.post('/api/test', {params: {key1: 'value1', key2: 'value2'}}).then(function (data) {
-                this.$data.something = data.something
-            })
+		func0 () {
+            this.$http.post('/api/test', {params: {key1: 'value1', key2:' value2'}}).then((response) => {
+                this.somedata = response.body
+			}, (response) => {
+				//error callback
+			})
         },
         func1 () {
-            this.$http.jsonp('http://101.254.157.124:8010/test', {params: {key1: 'value1', key2:'value2'}, jsonp: "jsonp"}).then(function (data) {
-                console.log(data.data)
-                this.$data.items = data.data.shows
-            })
+            this.$http.jsonp('http://101.254.157.124:8010/test', {params: {key1: 'value1', key2:'value2'}, jsonp: "jsonp"}).then((response) => {
+                console.log(response.data)
+                this.$data.items = response.data.shows
+            }, (response) => {
+				//error callback
+			})
         }
     }
 }
