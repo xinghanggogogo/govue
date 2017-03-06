@@ -7,6 +7,7 @@ import page2 from '../page/page2.vue';	//父组件向子组件传值
 import page3 from '../page/page3.vue';	//父组件调用子组件方法
 import page4 from '../page/page4.vue';	//子组件向父组件通信
 import page5 from '../page/page5.vue';	//http调用与v-for
+import page6 from '../page/page6.vue';	//webpack加载scss
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,7 @@ const routes = [
 	{ path: '/page3', name: 'page3', component: page3 },
 	{ path: '/page4', name: 'page4', component: page4 },
 	{ path: '/page5', name: 'page5', component: page5 },
+	{ path: '/page6', name: 'page6', component: page6 },
 ]
 
 const router = new VueRouter({
