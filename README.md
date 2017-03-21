@@ -1,9 +1,9 @@
 # gogogo
-
-> A Vue.js project
+> 一个Vue.js的脚手架
+> es6 + vue-router + vuex + webpack
+![img](./src/asserts/img/WechatIMG50.jpeg)
 
 ## Build Setup
-
 ``` bash
 # install dependencies
 npm install
