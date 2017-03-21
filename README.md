@@ -1,7 +1,7 @@
 # gogogo
-> 一个Vue.js的脚手架
-> es6 + vue-router + vuex + webpack
-![img]('./src/assets/img/WechatIMG50.jpeg')
+一个Vue.js的脚手架
+es6 + vue-router + vuex + webpack
+![img](./src/assets/img/WechatIMG50.jpeg)
 
 ## Build Setup
 ``` bash
