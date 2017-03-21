@@ -2,15 +2,12 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-import mutations from './mutations'
-import actions from './action'
-
-const state = {
-	itemTag: '这是初始的state'
-}
+import moduleA from './moduleA'
+import moduleB from './moduleB'
 
 export default new Vuex.Store({
-	state,
-	actions,
-	mutations
+  modules: {
+    moduleA,
+    moduleB
+  }
 })
