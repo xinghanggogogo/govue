@@ -10,7 +10,6 @@ export default {
 	},
 
 	fetchProvince({ commit }, params) {
-
 		//内部封装
 		utils._get('http://ditu.amap.com/service/regeo', params).then(res => {
 			commit('FETCH_PROVINCE', res)

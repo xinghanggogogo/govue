@@ -25,7 +25,6 @@ export default {
         })
         return p
     },
-
     _post(url, params) {
         let p = new Promise((resolve, reject) => {
             vue.http.post(url, {params: params}).then(response => {
@@ -37,8 +36,7 @@ export default {
             })
         })
         return p
-    }
-
+    },
     _jsonp(url ,params, callback) {
         var p = new Promise((resolve, reject) => {
             vue.http.jsonp(url, {params: params, jsonp: callback}).then(response => {
