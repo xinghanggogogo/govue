@@ -14,16 +14,30 @@ export default {
     // },
 
     _get(url, params) {
-        var p = new Promise((resolve, reject) => {
+        let p = new Promise((resolve, reject) => {
             vue.http.get(url, {params: params}).then(response => {
                 let res = response.body
                 resolve(res)
             }, response => {
                 console.log('error')
+                reject(response)
             })
         })
         return p
     },
+
+    _post(url, params) {
+        let p = new Promise((resolve, reject) => {
+            vue.http.post(url, {params: params}).then(response => {
+                let res = response.body
+                resolve(res)
+            }, response => {
+                console.log(error)
+                reject(response)
+            })
+        })
+        return p
+    }
 
     _jsonp(url ,params, callback) {
         var p = new Promise((resolve, reject) => {
