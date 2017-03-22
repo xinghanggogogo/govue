@@ -6,6 +6,8 @@
         <button @click="testVuexModuleB">testVuexModuleB</button>
         <p>{{province}}</p>
         <button @click="testVuexHttp">testVuexHttp</button>
+        <p>{{tvshow}}</p>
+        <button @click="testVuexHttpJsonp">testVuexHttpJsonp</button>
     </div>
 </template>
 
@@ -24,7 +26,8 @@ export default {
     computed: mapGetters({
         itemTagModuleA: 'getItemTagModuleA',
         itemTagModuleB: 'getItemTagModuleB',
-        province: 'getProvince'
+        province: 'getProvince',
+        tvshow: 'getTvShow'
     }),
     methods: {
         testVuexModuleA() {
@@ -37,7 +40,11 @@ export default {
         },
         testVuexHttp() {
             console.log('testVuexHttp')
-            this.$store.dispatch('fetchProvince', {id: 'xing', value: 'hang'})
+            this.$store.dispatch('fetchProvince', {longitude: 121.04925573429551, latitude: 31.315590522490712})
+        },
+        testVuexHttpJsonp() {
+            console.log('testVuexHttpJsonp')
+            this.$store.dispatch('fetchTvShow')
         }
     },
 }
