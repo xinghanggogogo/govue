@@ -10,6 +10,7 @@ import page5 from '../page/page5.vue';	//http调用与v-for
 import page6 from '../page/page6.vue';	//webpack加载scss
 import page7 from '../page/page7.vue';	//路由传值
 import page8 from '../page/page8.vue';	//vuex相关
+import page9 from '../page/page9.vue';	//Mint.vue
 
 
 Vue.use(VueRouter);
@@ -23,6 +24,7 @@ const routes = [
 	{ path: '/page6', name: 'page6', component: page6 },
 	{ path: '/page7/:id/:param1/:param2', name: 'page7', component: page7 },
 	{ path: '/page8', name: 'page8', component: page8 },
+	{ path: '/page9', name: 'page9', component: page9 },
 ]
 
 const router = new VueRouter({
