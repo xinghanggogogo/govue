@@ -12,7 +12,6 @@ import page7 from '../page/page7.vue';	//路由传值
 import page8 from '../page/page8.vue';	//vuex相关
 import page9 from '../page/page9.vue';	//Mint.vue
 
-
 Vue.use(VueRouter);
 
 const routes = [
@@ -28,10 +27,10 @@ const routes = [
 ]
 
 const router = new VueRouter({
-	mode:'history',
-    routes:routes,
-	linkActiveClass:'active',
-	history:true
+	mode: 'history',
+    routes: routes,
+	linkActiveClass: 'active',
+	history: true
 	});
 
 export  default router

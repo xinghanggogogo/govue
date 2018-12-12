@@ -7,9 +7,9 @@
 			<li><router-link to="/page4">4.子组件向父组件通信.</router-link></li>
 			<li><router-link to="/page5">5.http调用与v-for.</router-link></li>
 			<li><router-link to="/page6">6.webpack加载scss.</router-link></li>
-			<li><router-link to="/page7/1">7.路由传值.</router-link></li>
+			<li><router-link to="/page7/1/2/3">7.路由传值.</router-link></li>
 			<li><router-link to="/page8">8.vuex与promise异步</router-link></li>
-			<li><router-link to="/page9">9.Mint.vue</router-link></li>
+			<li><router-link to="/page9">9.Element.vue</router-link></li>
 		</ul>
 		<br>
 		<router-view></router-view>

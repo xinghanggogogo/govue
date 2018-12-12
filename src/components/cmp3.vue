@@ -15,7 +15,7 @@
 		name:'cmp3',
 		props: ['value1', 'value2'],
 		data () {
-			return{
+			return {
 				'value3': '333333'
 			}
 		},

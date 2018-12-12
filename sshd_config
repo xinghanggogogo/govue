@@ -1,0 +1,91 @@
+# This is ssh server systemwide configuration file.
+#
+# /etc/sshd_config
+
+#Port 			22
+ListenAddress 		0.0.0.0
+#HostKey			/etc/ssh_host_key
+#RandomSeed			/etc/ssh_random_seed
+#PidFile 		      /etc/sshd.pid
+#ServerKeyBits		768
+LoginGraceTime 		180
+#KeyRegenerationInterval 3600
+#umask
+#KeepAlive			yes
+#CheckMail			yes
+#IdleTimeout time
+
+X11Forwarding 		yes
+#X11DisplayOffset
+#XAuthLocation
+
+# Check permissions of important files/dirs:
+StrictModes 		yes
+
+####### logging #####
+# Minimal logging?
+#QuietMode 		      no
+#FascistLogging 		no
+
+SyslogFacility 		DAEMON
+#SyslogFacility 		AUTH
+#SilentDeny
+
+# Avoid double banner:
+PrintMotd 		      no
+
+########## Trust ########
+# .rhosts, .shosts ignored?
+# /etc/hosts.equiv and /etc/shosts.equiv are still used 
+IgnoreRhosts 		no
+#IgnoreRootRhosts
+
+# authentication using rhosts or /etc/hosts.equiv
+RhostsAuthentication 	no
+# authentication using rhosts + RSA host auth
+# The host must be known (ssh_known_hosts) and be in .[sr]hosts
+RhostsRSAAuthentication yes
+
+# Allow login with pure RSA public/private keys? 
+# (will circumvent UNIX login)
+RSAAuthentication 	no 
+
+########## login ########
+#ForcedEmptyPasswdChange	no
+#ForcedPasswdChange		yes
+#KerberosAuthentication
+#KerberosOrLocalPasswd
+#KerberosTgtPassing
+#TISAuthentication
+#AccountExpireWarningDays
+#PasswordExpireWarningDays
+# Allow login with UNIX password?
+PasswordAuthentication 	yes
+
+# Should logins be allowed with empty passwords?
+PermitEmptyPasswords 	no
+
+#yes, no, nopwd (disables password-authenticated root logins)
+PermitRootLogin 	yes
+
+
+######## Access control #######
+# Allow access from two trusted admin hosts
+#AllowHosts 	176.17.17.12 176.17.17.11 
+# AllowHosts *.our.com friend.other.com
+# DenyHosts lowsecurity.theirs.com *.evil.org evil.org 195.*
+
+# Restrict user groups
+#AllowGroups
+#DenyGroups
+
+# Restrict users
+#AllowUsers
+#DenyUsers jim bill@host1
+
+# Which clients can access .shosts here?
+#AllowSHosts
+#DenySHosts
+
+
+#EOF

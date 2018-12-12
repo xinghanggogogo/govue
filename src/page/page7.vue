@@ -1,5 +1,5 @@
 <template lang="html">
-    <div>
+    <div class='page7'>
         <p>路由传值({{id}})</p>
         <p>参数传值({{param1}}, {{param2}})</p>
         <p>testtest</p>
@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: 'page7',
     data () {
          return {
              id: this.$route.params.id,

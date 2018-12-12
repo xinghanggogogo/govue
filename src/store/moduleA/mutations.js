@@ -4,7 +4,7 @@ const FETCH_TVSHOW = 'FETCH_TVSHOW'
 
 export default {
 	[INITIALIZE_DATA_A](state) {
-		state.itemTagModuleA = '这是经过vuex-moduleB维护的state';
+		state.itemTagModuleA = '这是经过vuex-moduleA维护的state';
 	},
 	[FETCH_PROVINCE](state, res) {
 		state.province = res.data.province

@@ -1,6 +1,6 @@
 <template lang="html">
     <div id="counter-event-example">
-        <p>子组件向父组件通信.子组件出发父组件方法并传值.</p>
+        <p>子组件向父组件通信.子组件触发父组件方法并传值.</p>
         <p>父组件total:{{ total }}</p>
         <button-counter @incrementpass="incrementTotal"></button-counter>
   </div>
@@ -19,7 +19,7 @@ Vue.component('button-counter', {
   methods: {
     increment () {
       this.counter += 1
-      this.$emit('incrementpass', '子组件参数')
+      this.$emit('incrementpass', '子组件参数:'+String(this.counter))
     }
   },
 })
